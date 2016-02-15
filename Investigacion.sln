@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{D8061F1C-B463-9362-6228-DC63FFB3E50C}") = "Investigacion", "Assembly-UnityScript.unityproj", "{13D4C71E-1FF4-F6ED-0E03-99D0604FA20C}"
+Project("{944FFDFA-02DD-68C6-5508-BED7C196CFB6}") = "investigacion", "Assembly-CSharp.csproj", "{82397221-24E7-E8CF-7534-DB6C543F6C40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13D4C71E-1FF4-F6ED-0E03-99D0604FA20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13D4C71E-1FF4-F6ED-0E03-99D0604FA20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13D4C71E-1FF4-F6ED-0E03-99D0604FA20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13D4C71E-1FF4-F6ED-0E03-99D0604FA20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82397221-24E7-E8CF-7534-DB6C543F6C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82397221-24E7-E8CF-7534-DB6C543F6C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82397221-24E7-E8CF-7534-DB6C543F6C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82397221-24E7-E8CF-7534-DB6C543F6C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +36,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
