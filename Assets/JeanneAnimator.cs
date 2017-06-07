@@ -14,9 +14,9 @@ public class JeanneAnimator : MonoBehaviour {
 	};
 	public float targetFrameRate = 24.0f;
 	public string currentState = "idle";
-	private float currentFrameDuration = 0.0f;
 	public static int amountOfFrames = 48;
-	public Dictionary <string, AnimationState> stateMap = new Dictionary<string, AnimationState>();
+	private Dictionary <string, AnimationState> stateMap = new Dictionary<string, AnimationState>();
+	private float currentFrameDuration = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -55,7 +55,6 @@ public class JeanneAnimator : MonoBehaviour {
 	}
 
 	private void maybeSetNewState() {
-		// Ver para todos los estados, excepto el actual, si se apreto su tecla.
 		foreach (string state in states) {
 			if (state.Equals (currentState) || state.Equals("idle")) {
 				continue;
@@ -68,7 +67,7 @@ public class JeanneAnimator : MonoBehaviour {
 		}
 	}
 
-	public class AnimationState {
+	private class AnimationState {
 		public int currentFrame = 0;
 		public Sprite[] sprites;
 		public KeyCode trigger;
