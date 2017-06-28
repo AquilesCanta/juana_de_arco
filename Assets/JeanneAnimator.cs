@@ -18,8 +18,10 @@ public class JeanneAnimator : MonoBehaviour {
 	private Dictionary <string, AnimationState> stateMap = new Dictionary<string, AnimationState>();
 	private float currentFrameDuration = 0.0f;
 
-	// Use this for initialization
+	private Shader tvDistortionShader;
+
 	void Start () {
+		// Animation initialization.
 		foreach (string state in states) {
 			AnimationState thisState = new AnimationState ();
 			stateMap.Add(state, thisState);
@@ -32,6 +34,10 @@ public class JeanneAnimator : MonoBehaviour {
 					new Vector2 (0.5f, 0.5f));
 			}
 		}
+
+		// Shader initialization.
+		tvDistortionShader = (Shader) Resources.Load ("TvDistortion");
+		Camera.main.SetReplacementShader (tvDistortionShader, "");
 	}
 	
 	// Update is called once per frame
